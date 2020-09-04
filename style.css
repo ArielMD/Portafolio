@@ -1,0 +1,102 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap');
+
+:root{
+    --bg: #f5f5f5;
+    --fg: #141414;
+    --card: #EEE;
+    --buttonbg: #E4E6E6;
+    --accent: #FFAC33;
+
+    --border: 5px;
+}
+
+*{
+    margin:0px;
+    padding:0px;
+    box-sizing: inherit;
+}
+
+body{
+    background-color: var(--bg);
+    font-family: 'Poppins', sans-serif;
+    color: var(--fg);
+}
+
+.card {
+    /* border: 1px red solid; */
+    width: 45%;
+    margin: 5% auto;
+    padding: 50px;
+    background-color: var(--card);
+    border-radius: var(--border);
+    box-shadow: 0 10px 10px rgba(0,0,0, 0.35);
+}
+
+.photo {
+    margin: 10px auto;
+    width: 250px;
+    height: 250px;
+    overflow: hidden;
+    border-radius: 50%;
+    box-shadow: 0 10px 10px rgba(0,0,0, 0.35);
+}
+
+.photo img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.geeting {
+    margin-top: 10px;
+    text-align: center;
+    font-size: 40px;
+}
+
+.text{
+    font-size: 15px;
+    text-align: justify;
+    font-weight: 300;
+}
+
+.subtitle {
+    margin-top: 10px auto;
+    font-size: 20px;
+}
+.block{
+    margin-bottom: 20px;
+}
+
+.listItem {
+    list-style: none;
+    transition: all  .3s ease-out;
+}
+
+.listItem:hover {
+    color : var(--accent);
+    text-transform: uppercase;
+}
+
+.buttons {
+    width: 100%;
+    display:flex;
+    text-align: center;
+    justify-content: space-evenly;
+}
+ 
+.button{
+    background-color: var(--buttonbg);
+    text-decoration: none;
+    color : var(--fg);
+    font-size: 15px;
+    padding: 10px;
+    border-radius: var(--border);
+    box-shadow: 0 2px 5px rgba(0,0,0, 0.35);
+    transition: all  .3s ease-out;
+}
+
+.button:hover{
+    background-color:  var(--accent);
+    box-shadow: 0 7px 10px  rgba(0,0,0, 0.35);
+    transform: translateY(-4px);
+}
