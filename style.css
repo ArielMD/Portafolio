@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap');
 
 :root{
-    --bg: #f5f5f5;
+    --bg: #292929;
     --fg: #141414;
     --card: #EEE;
     --buttonbg: #E4E6E6;
@@ -59,6 +59,12 @@ body{
     font-weight: 300;
 }
 
+.skills{
+    display: inline-flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
 .subtitle {
     margin-top: 10px auto;
     font-size: 20px;
@@ -70,6 +76,25 @@ body{
 .listItem {
     list-style: none;
     transition: all  .3s ease-out;
+}
+
+.skillItem{
+    list-style: none;
+    transition: all  .3s ease-out;
+    display: inline-flex;
+    align-items: center;
+    padding: 10px;
+}
+
+.skillItem:hover{
+    background-color:  var(--accent);
+    box-shadow: 0 7px 10px  rgba(0,0,0, 0.35);
+    transform: translateY(-4px);
+}
+
+.skillItem img {
+    width: 30px;
+    height: 30px;
 }
 
 .listItem:hover {
